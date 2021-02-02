@@ -1,0 +1,74 @@
+
+<div class="container">
+    <div class="card bg-light">
+        <article class="card-body mx-auto" style="max-width: 400px;">
+            <h4 class="card-title mt-3 text-center">Create Account</h4>
+                <form #myform="ngForm" (ngSubmit)="createUser(myform)">
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                        </div>
+                        <input class="form-control" name="first_name" placeholder="First name" type="text" required ngModel>
+                    </div>
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                        </div>
+                        <input class="form-control" name="last_name" placeholder="Last name" type="text" required ngModel>
+                    </div>
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                        </div>
+                        <input class="form-control" name="email" placeholder="Email address" type="email" required ngModel>
+                    </div>
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                        </div>
+                        <input class="form-control" name="password" placeholder="Create password" type="password" required ngModel>
+                    </div>
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                        </div>
+                        <input class="form-control" name="repeat_password" placeholder="Repeat password" type="password" required ngModel>
+                    </div>                                   
+                    <div class="form-group">
+                        <button type="submit" [disabled]="!myform.valid" class="btn btn-primary btn-block"> Create Account  </button>
+                    </div>
+                    <p class="text-center">Have an account? <a [routerLink]="['/login']">Log In</a> </p>                                                                 
+                </form>
+        </article>
+    </div>
+</div>
+<br>
+<!-- <form *ngIf="newVehicleForm"  #myform = "ngForm" (ngSubmit) = "saveVehicle(myform)">
+    <h2>Add New Vehicle</h2>
+    <br>
+    <h4>Vehicle Details</h4>
+    <p>Registration Number<input class="required" type="text" name="registration_number" (click)="halfSave(myform)" required ngModel/></p>
+    <p>Register Owner Name <input class="required" type="text" name="register_owner_name" required ngModel /></p>
+    <p>Vehicle Type as mentioned on RC <input class="required" type="text" name="vehicle_type" required ngModel/></p>
+    <p>Make <input class="required" type="text" name="make" required ngModel /></p>
+    <p>Model <input class="required" type="text" name="model" required ngModel /></p>
+    <p>Registration Date <input class="required" type="date" name="registration_date" required ngModel /></p>
+    <p>Registration Up to  <input class="required" type="date" name="registration_upto" required ngModel /></p>
+    <p>Vehicle Colour as mentioned on RC<input class="required" type="text" name="vehicle_color" required ngModel /></p>
+    <p>Fuel Type <input class="required" type="text" name="fuel_type" required ngModel /></p>
+
+    <h4>Vehicle Documents Upload</h4>
+
+    <p>Front full photo of Vehicle: <input class="required" type="file" accept="*.png,.jpg" (click)="fun('vehicle_photo')" (change)="onFilechange($event)" name="vehicle_photo" required ngModel /></p>
+    <p>RC (Registration Certificate) <input class="required" type="file" accept="*.png,.jpg" (click)="fun('registration_certificate')" (change)="onFilechange($event)" name="registration_certificate" required ngModel /></p>
+    <p>Pollution Certificate<input class="required" type="file" accept="*.png,.jpg" (click)="fun('pollution_certicate')" (change)="onFilechange($event)" name="pollution_certicate" required ngModel /></p>
+    <p>Pollution Certificate Valid Up to <input class="required" type="date" name="pollution_certicate_valid_upto" required ngModel /></p>
+    <p>Insurance Certificate<input class="required" type="file" accept="*.png,.jpg" (click)="fun('vehicle_insurance')" (change)="onFilechange($event)" name="vehicle_insurance" required ngModel /></p>
+    <p>Insurance Certificate Valid Up to  <input class="required" type="date" name="vehicle_insurance_valid_upto" required ngModel /></p>
+    <p>Vehicle Permit<input class="required" type="file" accept="*.png,.jpg" (click)="fun('vehicle_permit')" (change)="onFilechange($event)" name="vehicle_permit" required ngModel /></p>
+    <p>Vehicle Permit Valid Up to  <input class="required" type="date" name="vehicle_permit_valid_upto" required ngModel /></p>
+
+        <button type="submit" [disabled]="!myform.valid" class="btn btn-outline-primary mr-2">Submit</button>
+        <button type="button" class="btn btn-outline-dark" (click)="cancelNewVehicle()">Cancel</button>
+
+</form> -->
