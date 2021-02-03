@@ -17,6 +17,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthService } from './services/auth.service';
 import { AuthGuard } from './services/auth.guard';
 import { JwtModule } from '@auth0/angular-jwt';
+import { AmazonComponent } from './amazon/amazon.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { JwtModule } from '@auth0/angular-jwt';
     HomeComponent,
     SignupComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    AmazonComponent
   ],
   imports: [
     BrowserModule,

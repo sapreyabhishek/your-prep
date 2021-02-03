@@ -1,1 +1,33 @@
-<p>Welcome {{name}}</p>
+
+<section id="header" class="d-flex align-items-center">
+    <div class="container-fluid nav-bg">
+        <div class="row">
+            <div class="col-10 mx-auto">
+
+                    <h4>Welcome {{name}}</h4>
+                        <h2 class="container text-center"><strong>Companies</strong></h2>
+                        <table class="table table-hover">
+                            <tbody>
+                              <tr>
+                                <td><em><a [routerLink]="['./amazon']">Amazon</a></em></td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                
+                              </tr>
+                              <tr>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                            </tbody>
+                        </table>
+            </div>
+        </div>
+    </div>
+</section>

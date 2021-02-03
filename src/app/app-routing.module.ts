@@ -5,12 +5,14 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthGuard } from './services/auth.guard'
+import { AmazonComponent } from './amazon/amazon.component';
 
 const routes: Routes = [
   { path:'',component: HomeComponent},
   { path :'signup', component: SignupComponent},
   { path:'login',component: LoginComponent },
-  { path:'dashboard/:id',component: DashboardComponent, canActivate:[AuthGuard] }
+  { path:'dashboard/:id',component: DashboardComponent, canActivate:[AuthGuard] },
+  { path:'dashboard/:id/amazon',component: AmazonComponent,canActivate:[AuthGuard] }
 ];
 
 @NgModule({
