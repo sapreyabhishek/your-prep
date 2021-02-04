@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CompanyService } from '../services/company.service'
 
 @Component({
   selector: 'app-amazon',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./amazon.component.css']
 })
 export class AmazonComponent implements OnInit {
-
-  constructor() { }
+  amazonData:any;
+  constructor(private companyService:CompanyService) { }
 
   ngOnInit(): void {
+    this.getCompany();
+  }
+  getCompany(){
+    this.companyService.getAmazon().subscribe((res)=>{
+      this.amazonData=res;
+    })
   }
 
 }

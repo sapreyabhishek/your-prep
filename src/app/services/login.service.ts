@@ -11,7 +11,7 @@ export class LoginService {
   constructor(private http:HttpClient,private vault:VaultService) { }
 
   newUser(data){
-    return this.http.post(this.vault.apiDomain+'/signup',data);
+    return this.http.post(this.vault.apiDomain+'/signup',data,{responseType:'text'});
   }
 
   loginUser(data){

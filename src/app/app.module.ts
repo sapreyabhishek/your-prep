@@ -41,7 +41,6 @@ import { AmazonComponent } from './amazon/amazon.component';
     JwtModule.forRoot({
       config: {
         tokenGetter:() => {
-        console.log(localStorage.getItem('access_token'));
       return localStorage.getItem('access_token');
     },
         allowedDomains: [ 'localhost:3000'],
