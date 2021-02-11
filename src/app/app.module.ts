@@ -18,6 +18,9 @@ import { AuthService } from './services/auth.service';
 import { AuthGuard } from './services/auth.guard';
 import { JwtModule } from '@auth0/angular-jwt';
 import { AmazonComponent } from './amazon/amazon.component';
+import { TeamComponent } from './team/team.component';
+import { MathworksComponent } from './mathworks/mathworks.component';
+import { CiscoComponent } from './cisco/cisco.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { AmazonComponent } from './amazon/amazon.component';
     SignupComponent,
     LoginComponent,
     DashboardComponent,
-    AmazonComponent
+    AmazonComponent,
+    TeamComponent,
+    MathworksComponent,
+    CiscoComponent
   ],
   imports: [
     BrowserModule,

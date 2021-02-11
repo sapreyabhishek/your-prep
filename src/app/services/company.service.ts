@@ -12,4 +12,10 @@ export class CompanyService {
   getAmazon(): Observable<any> {
     return this.http.get<any>( this.vault.apiDomain + '/company/amazon');
   }
+  getMathworks():Observable<any>{
+    return this.http.get<any>(this.vault.apiDomain + '/company/mathworks');
+  }
+  getCisco():Observable<any>{
+    return this.http.get<any>(this.vault.apiDomain + '/company/cisco');
+  }
 }

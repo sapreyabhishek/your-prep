@@ -18,6 +18,10 @@ export class LoginService {
     return this.http.post(this.vault.apiDomain+'/login',data,{responseType:'text'})
   }
 
+  newContactForm(data){
+    return this.http.post(this.vault.apiDomain+'/contact',data,{responseType:'text'})
+  }
+
   logout() {
     localStorage.removeItem('access_token');
     location.reload();

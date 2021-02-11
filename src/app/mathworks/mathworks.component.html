@@ -2,7 +2,7 @@
     <div class="container-fluid nav-bg">
         <div class="row">
             <div class="col-10 mx-auto">
-                <h3 class="text-center">Amazon</h3>
+                <h3 class="text-center">Mathworks</h3>
                 <table class="table table-hover">
                     <thead>
                       <tr>
@@ -14,12 +14,12 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr *ngFor="let amazon of amazonData;let i=index">
+                      <tr *ngFor="let mathworks of mathworksData;let i=index">
                         <th scope="row">{{i+1}}</th>
-                        <td>{{amazon.q_name}}</td>
-                        <td>{{amazon.ans}}</td>
-                        <td>{{amazon.college}}</td>
-                        <td>{{amazon.year}}</td>
+                        <td>{{mathworks.q_name}}</td>
+                        <td>{{mathworks.ans}}</td>
+                        <td>{{mathworks.college}}</td>
+                        <td>{{mathworks.year}}</td>
                       </tr>
                     </tbody>
                   </table>

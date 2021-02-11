@@ -8,5 +8,5 @@ export class VaultService {
   constructor() {
     //this.apiDomain = "http://localhost:3000"
      this.apiDomain = "https://yourprep-backend.herokuapp.com"
-   }
+    }
 }

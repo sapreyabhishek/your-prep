@@ -46,26 +46,26 @@
     <div class="row">
       <div class="col-sm-5">
         <p>Contact us and we'll get back to you within 24 hours.</p>
-        <p><span class="glyphicon glyphicon-map-marker"></span> Delhi, India</p>
-        <p><span class="glyphicon glyphicon-phone"></span> +91 1234567890</p>
-        <p><span class="glyphicon glyphicon-envelope"></span> yourprep@gmail.com</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> Chhattisgarh, India</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +91 9589952351</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> yourprep123@gmail.com</p>
       </div>
       <div class="col-sm-7 slideanim">
         <div class="row">
           <div class="col-sm-6 form-group">
-            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            <input class="form-control" placeholder="Name" type="text" [(ngModel)]="name" required>
           </div>
           <div class="col-sm-6 form-group">
-            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            <input class="form-control" placeholder="Email" type="email" [(ngModel)]="email" required>
           </div>
         </div>
-        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <textarea class="form-control" name="comment" placeholder="Comment" rows="5" [(ngModel)]="comment" required></textarea><br>
         <div class="row">
           <div class="col-sm-12 form-group">
-            <button class="btn btn-default pull-right" type="submit">Send</button>
+            <button class="btn btn-default pull-right" (click)="contactForm()" type="submit">Send</button>
           </div>
-       </div>
-       </div>
+        </div>
+      </div>
     </div>
 </div>
 </div>
